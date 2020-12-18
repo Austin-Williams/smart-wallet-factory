@@ -14,7 +14,7 @@ The smart wallets it creates:
 2. Allows the owner to make several calls to several contracts in a single transaction. This is done via the `executeMany` function. (E.g., The owner can use this feature to deposit and bond ESD in a single transaction, or perform any other collection of actions they want to happen atomically).
 3. Allows the owner to transfer ownership to another address. This is done via a secure "handshake" to prevent accidental loss of wallets. The owner "offers" ownership to another address (via the `offerOwnership` function), and the ownership transfer happens only when the new address explicitly accepts the offer (via the `takeOwnership` function).
 4. Are CHI-enabled, so the owners can (optionally) do all the above while using CHI tokens to reduce gas costs during times of high gas prices. This feature is entirely optional, non-blocking, and has no effect on users who don't use CHI.
-4. For UX convenience, and so users can more esily keep track of which wallets they own, the factory contract keeps a registry that maps every address to the set of wallets they own.
+4. For UX convenience, and so users can more easily keep track of which wallets they own, the factory contract keeps a registry that maps every address to the set of wallets they currently own.
 
 ## Why
 
